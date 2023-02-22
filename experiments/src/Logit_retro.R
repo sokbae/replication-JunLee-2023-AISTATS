@@ -4,7 +4,7 @@
 ####  Inputs: (Y_i,T_i,X_i): i=1,...,n                                ####
 ####  Outputs: estimate                                               ####  
 ##########################################################################
-Logit_DML_retro = function(outcome=outcome,treat=treat,X=X){
+Logit_retro = function(outcome=outcome,treat=treat,X=X){
   
   X = scale(X)
   X_matrix = cbind(rep(1,nrow(X)),X)

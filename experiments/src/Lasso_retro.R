@@ -5,9 +5,6 @@
 ####  Outputs: estimate                                               ####  
 ##########################################################################
 Lasso_retro = function(outcome=outcome,treat=treat,X=X){
-  
-  X = scale(X)
-  X_matrix = cbind(rep(1,nrow(X)),X)
 
   ### Estimation of Pr(treat=1|X=x,outcome=1) using glmnet package ###   
   T_case = treat[outcome==1]

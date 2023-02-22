@@ -1,4 +1,4 @@
-### updated on 9 October 2022
+### updated on 22 Feb 2023
 ### Monte Carlo Experiments for Average Adjusted Association
 rm(list=ls(all=T))
 gc()

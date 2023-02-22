@@ -6,9 +6,6 @@
 ##########################################################################
 Lasso_pro = function(outcome=outcome,treat=treat,X=X){
   
-  X = scale(X)
-  X_matrix = cbind(rep(1,nrow(X)),X)
-
   ### Estimation of Pr(outcome=1|X=x,treat=1) using glmnet package ###   
   Y_case = outcome[treat==1]
   X_case = X[treat==1,]

@@ -1,4 +1,4 @@
-### updated on 9 October 2022
+### updated on 22 Feb 2023
 ### Plug-in estimators of Average Adjusted Association without Regularization
 ### Logit based estimation
 rm(list=ls(all=T))
@@ -47,8 +47,8 @@ prop_topincome = mean(Y_data)
 
 ### Logit estimation ###
 
-   pro_est_logit = Logit_DML_pro(outcome=Y_data,treat=T_data,X=HD_X)
- retro_est_logit = Logit_DML_retro(outcome=Y_data,treat=T_data,X=HD_X)
+   pro_est_logit = Logit_pro(outcome=Y_data,treat=T_data,X=HD_X)
+ retro_est_logit = Logit_retro(outcome=Y_data,treat=T_data,X=HD_X)
 
  ### Save estimation results ### 
  
